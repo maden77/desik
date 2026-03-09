@@ -24,4 +24,4 @@ Aplikasi Android sederhana untuk memutar video YouTube.
 maden77
 
 ## Repo
-https://github.com/maden77/desik
+https://github.com/maden77/desik 
