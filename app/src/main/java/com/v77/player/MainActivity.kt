@@ -1,4 +1,4 @@
- package com.v77.player
+package com.v77.player
 
 import android.os.Bundle
 import android.webkit.WebView
