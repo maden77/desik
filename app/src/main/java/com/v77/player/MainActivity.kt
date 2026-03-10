@@ -34,8 +34,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Video default: Never Gonna Give You Up
-        loadYouTubeVideo("dQw4w9WgXcQ")
-        editTextVideoId.setText("dQw4w9WgXcQ")
+        loadYouTubeVideo("TkFxc65QCqA")
+        editTextVideoId.setText("TkFxc65QCqA")
     }
 
     private fun setupWebView() {
