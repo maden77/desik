@@ -1,31 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#121212">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"
+        android:backgroundTint="#FF0000"/>
 
-    <application
-        android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="DESIK"
-        
-        android:supportsRtl="true"
-        android:theme="@style/Theme.DESIK"
-        android:usesCleartextTraffic="true"
-        tools:targetApi="31">
-        
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:configChanges="orientation|screenSize|keyboardHidden">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        
-    </application>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DESIK"
+        android:textColor="#FF0000"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"
+        android:layout_gravity="center"/>
 
-</manifest>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="by maden77"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/buttonVideo1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="4dp"
+            android:text="Video 1"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#333333"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/buttonVideo2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:text="Video 2"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#333333"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextVideoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan ID YouTube"
+        android:textColorHint="#888888"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/edittext_bg"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/buttonLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PUTAR VIDEO"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF0000"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"/>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
